@@ -119,3 +119,52 @@ body {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
+
+.isma {
+  background-image: url('./skool_ai/isma.jpg');
+}
+
+.taha {
+  background-image: url('./skool_ai/taha.jpg');
+}
+
+.moal {
+  background-image: url('./skool_ai/moal.jpg');
+}
+
+.khna {
+  background-image: url('./skool_ai/khna.jpg');
+}
+
+.lena {
+  background-image: url('./skool_ai/lena.jpg');
+}
+
+.rofa {
+  background-image: url('./skool_ai/rofa.jpg');
+}
+
+.oumi {
+  background-image: url('./skool_ai/oumi.jpg');
+}
+
+.arthur {
+  background-image: url('./skool_ai/arthur.jpg');
+}
+
+.theo {
+  background-image: url('./skool_ai/theo.jpg');
+}
+.img-circle {
+  border-radius: 50%;
+  max-width: 100%; 
+  height: auto;
+  display:block;
+}
+
+.result-div {
+  margin: 0 auto;
+  width: 300px; 
+  margin-top: auto;
+  padding-top: 10%;
+}
