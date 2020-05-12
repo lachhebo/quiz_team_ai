@@ -152,7 +152,9 @@ class App extends Component {
         <div className="Title">
           <h1>AUM'AI Skool Test</h1>
         </div>
-        {this.renderPage()}
+        <div className="RenderPage">
+          {this.renderPage()}
+        </div>
       </div>
     );
   }

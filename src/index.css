@@ -41,36 +41,43 @@ body {
   }
 }
 
+/* Start Page */
+.startPage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.subtitle {
+  font-family: 'Boogaloo';
+  font-size: xxx-large;
+  color: teal;
+  padding: 20px;
+  margin: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* Quiz Component */
-
-/* QuestionCount Component */
-/* .questionCount {
-  padding: 1.5rem 2.5rem 0;
-  font-size: 14px;
-} */
-
 /* Question Component */
 .question {
   font-family: 'Boogaloo';
-  font-size: xx-large;
+  font-size: xxx-large;
   color: teal;
-  padding: 50px;
+  padding: 30px;
   margin: 0;
   text-align: center;
 }
 
-.answerOptions {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 .choices {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
-  margin: auto;
-  padding-top: auto;
+  align-content: center;
 }
 
 /* AnswerOption Component */
@@ -79,7 +86,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10%;
 }
 
 /* Result Component */
