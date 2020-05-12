@@ -1,20 +1,32 @@
 var quizQuestions = [
   {
-      question: "What franchise would you rather play a game from?",
+      question: "Ton sport préféré ?",
       answers: [
           {
-              type: "Microsoft,Sony",
-              content: "Halo"
+              type: "Nacim, Ismail",
+              content: "Soulever de la fonte"
           },
           {
-              type: "Nintendo,PC",
-              content: "Pokemon"
+              type: "Alessandro",
+              content: "Le sport de chambre"
           },
           {
-              type:  "Linux",
-              content: "Uncharted"
+              type: "Théophile",
+              content: "Le marathon des bars"
+          },
+          {
+              type: "Fabien",
+              content: "Netflix and Chill"
+          },
+          {
+              type: "Léa",
+              content: "Je me sens libre quand je cours",
+          },
+          {
+            type: "Alessandro",
+            content: "Le foot devant la télé et avec les copains",
           }
-      ]
+    ]
   },
   {
       question: "Which console would you prefer to play with friends?",
@@ -30,7 +42,12 @@ var quizQuestions = [
           {
               type: "Sony",
               content: "Playstation 1"
-          }
+          },
+          {
+            type: "PC",
+            content: "Les Sims"
+        }
+
       ]
   },
   {
