@@ -3,6 +3,7 @@ import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import logo from './svg/logo.svg';
+import StartPage from './components/StartPage';
 import './App.css';
 
 class App extends Component {
@@ -16,10 +17,11 @@ class App extends Component {
       answerOptions: [],
       answer: '',
       answersCount: {},
-      result: ''
+      result: 'start_page'
     };
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
+    this.startQuizz = this.startQuizz.bind(this);
   }
 
   componentDidMount() {
@@ -73,7 +75,7 @@ class App extends Component {
         },
         answer: answer
       }));
-      
+
     });
   }
 
@@ -124,6 +126,26 @@ class App extends Component {
     return <Result quizResult={this.state.result} />;
   }
 
+  renderPage() {
+    if (this.state.result === 'start_page') {
+      return this.renderStartPage()
+    } else if (this.state.result) {
+      return this.renderResult()
+    } else {
+      return this.renderQuiz()
+    }
+  }
+
+  renderStartPage(){
+    return <StartPage result={this.state.result} onStartQuiz={this.startQuizz} />;
+  }
+
+  startQuizz(event){
+    const result = ''
+    this.setState({ result: result });
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -131,7 +153,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>React Quiz</h2>
         </div>
-        {this.state.result ? this.renderResult() : this.renderQuiz()}
+        {this.renderPage()}
       </div>
     );
   }
