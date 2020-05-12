@@ -3,15 +3,15 @@ var quizQuestions = [
       question: "What franchise would you rather play a game from?",
       answers: [
           {
-              type: "Microsoft",
+              type: "Microsoft,Sony",
               content: "Halo"
           },
           {
-              type: "Nintendo",
+              type: "Nintendo,PC",
               content: "Pokemon"
           },
           {
-              type: "Sony",
+              type:  "Linux",
               content: "Uncharted"
           }
       ]
@@ -20,11 +20,11 @@ var quizQuestions = [
       question: "Which console would you prefer to play with friends?",
       answers: [
           {
-              type: "Microsoft",
+              type: "Microsoft,PC,Linux",
               content: "X-Box"
           },
           {
-              type: "Nintendo",
+              type: "Microsoft",
               content: "Nintendo 64"
           },
           {
@@ -37,11 +37,11 @@ var quizQuestions = [
       question: "Which of these racing franchises would you prefer to play a game from?",
       answers: [
           {
-              type: "Microsoft",
+              type: "Microsoft,Sony",
               content: "Forza"
           },
           {
-              type: "Nintendo",
+              type: "Linux,PC",
               content: "Mario Kart"
           },
           {
@@ -54,7 +54,7 @@ var quizQuestions = [
       question: "Which of these games do you think is best?",
       answers: [
           {
-              type: "Microsoft",
+              type: "PC,Microsoft",
               content: "BioShock"
           },
           {
