@@ -63,13 +63,18 @@ class App extends Component {
   }
 
   setUserAnswer(answer) {
-    this.setState((state, props) => ({
-      answersCount: {
-        ...state.answersCount,
-        [answer]: (state.answersCount[answer] || 0) + 1
-      },
-      answer: answer
-    }));
+    var answers = answer.split(',')
+
+    answers.forEach(answer => {
+      this.setState((state, props) => ({
+        answersCount: {
+          ...state.answersCount,
+          [answer]: (state.answersCount[answer] || 0) + 1
+        },
+        answer: answer
+      }));
+      
+    });
   }
 
   setNextQuestion() {
