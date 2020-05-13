@@ -176,7 +176,7 @@ function Result(props) {
       <Popover id="popover-basic">
         <Popover.Title as="h3">{props.toUpperCase()}</Popover.Title>
         <Popover.Content>
-          <strong>{trigramme_to_data[props]['name']}</strong>, {trigramme_to_data[props]['anecdote']}, retrouve le sur <a href={trigramme_to_data[props]['lien_askbob']} target="_blank">askbob</a>
+          <strong>{trigramme_to_data[props]['name']}</strong>, {trigramme_to_data[props]['anecdote']}, retrouve le sur <a href={trigramme_to_data[props]['lien_askbob']} target="_blank"  rel="noopener noreferrer">askbob</a>
         </Popover.Content>
       </Popover>
     );
