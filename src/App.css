@@ -1,14 +1,9 @@
-/* body */
-
-h1 {
-  margin-block-end: 0em;
-}
-
 .Title {
   font-family: 'Boogaloo';
   color: black;
+  font-size: xxx-large;
   text-align: center;
-  font-size: 200%;
+  margin-top: 10px;
 }
 
 /* @keyframes spin {

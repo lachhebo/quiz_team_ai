@@ -29,6 +29,7 @@ body {
   font-family: sans-serif;
 }
 
+
 .container {
   position: relative;
   margin: 0 auto;
@@ -48,6 +49,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
+  text-align: -webkit-center;
 }
 
 .subtitle {
@@ -55,8 +57,7 @@ body {
   font-size: xxx-large;
   color: teal;
   padding: 20px;
-  margin: 50px;
-  margin-top: 20px;
+  margin: 60px;
   text-align: center;
 }
 

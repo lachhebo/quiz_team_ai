@@ -4,7 +4,6 @@ import Quiz from './components/Quiz';
 import Result from './components/Result';
 import StartPage from './components/StartPage';
 import './App.css';
-import './fonts/LuckiestGuy-Regular.ttf'
 import './bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -147,7 +146,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Title">
-          <h1>AUM'AI Skool Test</h1>
+          AUM'AI Skool Test
         </div>
         <div className="RenderPage">
           {this.renderPage()}
