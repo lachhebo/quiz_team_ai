@@ -3,7 +3,7 @@ var quizQuestions = [
         question: "Ton sport préféré ?",
         answers: [
             {
-                type: "arthur",
+                type: "lena",
                 content: "Soulever de la fonte"
             },
             {
@@ -11,15 +11,15 @@ var quizQuestions = [
                 content: "Le sport de chambre"
             },
             {
-                type: "lena, khna",
+                type: "moal",
                 content: "Le marathon des bars"
             },
             {
-                type: "moal",
+                type: "taha",
                 content: "Netflix and Chill"
             },
             {
-                type: "taha,isma",
+                type: "khna, isma",
                 content: "Je me sens libre quand je cours",
             },
             {
@@ -29,34 +29,45 @@ var quizQuestions = [
         ]
     },
     {
-        question: "Tu prononce jif ou GIF ?",
+        question: "T'es plutôt Gif ou \"J\"if ?",
         answers: [
             {
-                type: "theo",
-                content: "Soulever de la fonte"
+                type: "theo, taha, khna",
+                content: "Un G, quelle question !"
             },
             {
                 type: "oumi, lena",
-                content: "Le sport de chambre"
+                content: "Avec un J, comme Giraffe"
             },
-            {
-                type: "taha",
-                content: "Le marathon des bars"
-            },
-            {
-                type: "khna",
-                content: "Netflix and Chill"
-            },
-            {
-                type: "arthur,isma",
-                content: "Je me sens libre quand je cours",
-            },
+        ]
+    },
+    {
+        question: "Ta boisson préférée ? ",
+        answers: [
             {
                 type: "moal",
-                content: "Le foot devant la télé et avec les copains",
+                content: "La binouzze"
+            },
+            {
+                type: "lena",
+                content: "Just a cup of tea"
+            },
+            {
+                type: "rofa",
+                content: "Coffee is my drug"
+            },
+            {
+                type: "isma",
+                content: "Esprit sain dans un corps sain , je bois de l'eau"
+            },
+            {
+                type: "arthur",
+                content: "Un petit jaune"
             }
+
         ]
-    }
+    },
+
 ];
 
 export default quizQuestions;
