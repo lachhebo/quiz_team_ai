@@ -9,6 +9,8 @@ interface ButtonProps {
 const StartButton = styled(Button)<ButtonProps>`
   display: block;
   font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   `
 
 export default StartButton
