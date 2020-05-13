@@ -10,7 +10,65 @@ import oumi from '../skool_ai/oumi.jpg';
 import rofa from '../skool_ai/rofa.jpg';
 import theo from '../skool_ai/theo.jpg';
 import arthur from '../skool_ai/arthur.jpg';
+import { Container, Row, Col, Image, OverlayTrigger, Popover } from 'react-bootstrap';
 
+
+var trigramme_to_data = {
+  'oumi': {
+    'name': 'Michael',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  },
+  'arthur': {
+    'name': 'Arthur',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  },
+  'moal': {
+    'name': 'Michael',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  },
+  'khna': {
+    'name': 'Nacim',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  },
+  'taha': {
+    'name': 'Taha',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  },
+  'rofa': {
+    'name': 'Fabien',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  },
+  'lena': {
+    'name': 'Lea',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  },
+  'isma': {
+    'name': 'Ismaël',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  },
+  'theo': {
+    'name': 'Théophile',
+    'anecdote': "élue 3 fois meilleur bodybuilder unijambiste de France",
+    'lien_askbob': "https://askbob.octo.com/users/oumi",
+    'compétence': ['...']
+  }
+}
 
 
 function Result(props) {
@@ -44,6 +102,87 @@ function Result(props) {
     }
   }
 
+  function otherSoulMate(string_result) {
+    var others = [];
+
+    if (string_result !== 'isma') {
+      others.push(isma)
+    }
+    if (string_result !== 'arthur') {
+      others.push(arthur)
+    }
+    if (string_result !== 'lena') {
+      others.push(lena)
+    }
+    if (string_result !== 'khna') {
+      others.push(khna)
+    }
+    if (string_result !== 'moal') {
+      others.push(moal)
+    }
+    if (string_result !== 'oumi') {
+      others.push(oumi)
+    }
+    if (string_result !== 'rofa') {
+      others.push(rofa)
+    }
+    if (string_result !== 'taha') {
+      others.push(taha)
+    }
+    if (string_result !== 'theo') {
+      others.push(theo)
+    }
+
+    return others
+  }
+
+
+  function otherSoulMateName(string_result) {
+    var others = [];
+
+    if (string_result !== 'isma') {
+      others.push('isma')
+    }
+    if (string_result !== 'arthur') {
+      others.push('arthur')
+    }
+    if (string_result !== 'lena') {
+      others.push('lena')
+    }
+    if (string_result !== 'khna') {
+      others.push('khna')
+    }
+    if (string_result !== 'moal') {
+      others.push('moal')
+    }
+    if (string_result !== 'oumi') {
+      others.push('oumi')
+    }
+    if (string_result !== 'rofa') {
+      others.push('rofa')
+    }
+    if (string_result !== 'taha') {
+      others.push('taha')
+    }
+    if (string_result !== 'theo') {
+      others.push('theo')
+    }
+
+    return others
+  }
+
+  function renderTooltipSoulMate(props) {
+    return (
+      <Popover id="popover-basic">
+        <Popover.Title as="h3">{props.toUpperCase()}</Popover.Title>
+        <Popover.Content>
+          <strong>{trigramme_to_data[props]['name']}</strong>, {trigramme_to_data[props]['anecdote']}, retrouve le sur <a href={trigramme_to_data[props]['lien_askbob']} target="_blank">askbob</a>
+        </Popover.Content>
+      </Popover>
+    );
+  }
+
+
   return (
     <CSSTransitionGroup
       className="container result"
@@ -54,10 +193,101 @@ function Result(props) {
       transitionAppear
       transitionAppearTimeout={500}
     >
-      <div className="result-div">
-        <img src={soulMate(props.quizResult)} alt={props.quizResult} className="img-circle" />
-        <p> Your AI skool soulmate is <strong>{props.quizResult}</strong>! </p>
-      </div>
+
+
+      <Container>
+        <Row>
+          <Col xs={1} md={4}></Col>
+          <Col xs={4} md={4}>
+            <OverlayTrigger
+              placement="right"
+              delay={{ show: 250, hide: 1200 }}
+              overlay={renderTooltipSoulMate(props.quizResult)}
+            >
+              <Image src={soulMate(props.quizResult)} roundedCircle />
+            </OverlayTrigger>
+
+          </Col>
+          <Col xs={1} md={4}></Col>
+        </Row>
+      </Container>
+
+      <Container>
+        <p>Look at the others : </p>
+
+        <Row className="rowSkoolIA">
+          <Col xs={1} md={4}>
+            <OverlayTrigger
+              placement="right"
+              delay={{ show: 250, hide: 1200 }}
+              overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[0])}
+            >
+              <Image src={otherSoulMate(props.quizResult)[0]} thumbnail />
+            </OverlayTrigger>
+          </Col>
+          <Col xs={4} md={4}>
+          <OverlayTrigger
+              placement="right"
+              delay={{ show: 250, hide: 1200 }}
+              overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[1])}
+            >
+              <Image src={otherSoulMate(props.quizResult)[1]} thumbnail />
+            </OverlayTrigger>
+          </Col>
+          <Col xs={1} md={4}>
+          <OverlayTrigger
+              placement="right"
+              delay={{ show: 250, hide: 1200 }}
+              overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[2])}
+            >
+              <Image src={otherSoulMate(props.quizResult)[2]} thumbnail />
+            </OverlayTrigger>
+          </Col>
+        </Row>
+        <Row className="rowSkoolIA">
+          <Col xs={1} md={4}>
+          <OverlayTrigger
+              placement="right"
+              delay={{ show: 250, hide: 1200 }}
+              overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[3])}
+            >
+              <Image src={otherSoulMate(props.quizResult)[3]} thumbnail />
+            </OverlayTrigger>
+          </Col>
+          <Col xs={4} md={4}>
+          <OverlayTrigger
+              placement="right"
+              delay={{ show: 250, hide: 1200 }}
+              overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[4])}
+            >
+              <Image src={otherSoulMate(props.quizResult)[4]} thumbnail />
+            </OverlayTrigger>
+          </Col>
+          <Col xs={1} md={4}>
+          <OverlayTrigger
+              placement="right"
+              delay={{ show: 250, hide: 1200 }}
+              overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[5])}
+            >
+              <Image src={otherSoulMate(props.quizResult)[5]} thumbnail />
+            </OverlayTrigger>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={1} md={4}></Col>
+          <Col xs={4} md={4}>
+          <OverlayTrigger
+              placement="right"
+              delay={{ show: 250, hide: 1200 }}
+              overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[6])}
+            >
+              <Image src={otherSoulMate(props.quizResult)[6]} thumbnail />
+            </OverlayTrigger>
+          </Col>
+          <Col xs={1} md={4}></Col>
+        </Row>
+
+      </Container>
     </CSSTransitionGroup>
   );
 }
