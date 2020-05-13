@@ -20,6 +20,7 @@ const Button = styled.button<Props>`
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   border: 2px solid ${COLORS.black};
   padding: ${({ $small }) => ($small ? "8px 15px" : "15px 30px")};
+  margin: 10px;
   &,
   span {
     transition-duration: 0.2s;

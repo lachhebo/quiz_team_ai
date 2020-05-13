@@ -1,14 +1,14 @@
-@font-face {
-  font-family: 'Boogaloo';
-  src: local('Boogaloo'), url(./fonts/Boogaloo-Regular.ttf) format('truetype');
+/* body */
+
+h1 {
+  margin-block-end: 0em;
 }
 
-/* body */
 .Title {
   font-family: 'Boogaloo';
   color: black;
   text-align: center;
-  font-size: x-large;
+  font-size: 200%;
 }
 
 /* @keyframes spin {
