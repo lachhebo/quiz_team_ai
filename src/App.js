@@ -5,6 +5,7 @@ import Result from './components/Result';
 import StartPage from './components/StartPage';
 import './App.css';
 import './fonts/LuckiestGuy-Regular.ttf'
+import './bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   constructor(props) {
@@ -102,11 +103,7 @@ class App extends Component {
   }
 
   setResults(result) {
-    if (result.length === 1) {
       this.setState({ result: result[0] });
-    } else {
-      this.setState({ result: 'Undetermined' });
-    }
   }
 
   renderQuiz() {

@@ -161,6 +161,7 @@ body {
 .theo {
   background-image: url('./skool_ai/theo.jpg');
 }
+
 .img-circle {
   border-radius: 50%;
   max-width: 100%; 
@@ -172,5 +173,8 @@ body {
   margin: 0 auto;
   width: 300px; 
   margin-top: auto;
-  padding-top: 10%;
+}
+
+.rowSkoolIA{
+  margin: 10px;
 }

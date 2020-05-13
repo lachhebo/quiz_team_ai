@@ -3,6 +3,7 @@ var quizQuestions = [
         question: "Ton sport préféré ?",
         answers: [
             {
+<<<<<<< HEAD
                 type: "Ismail",
                 content: "Soulever de la fonte"
             },
@@ -24,11 +25,35 @@ var quizQuestions = [
             },
             {
                 type: "Alessandro",
+=======
+                type: "oumi",
+                content: "Soulever de la fonte"
+            },
+            {
+                type: "oumi",
+                content: "Le sport de chambre"
+            },
+            {
+                type: "oumi",
+                content: "Le marathon des bars"
+            },
+            {
+                type: "oumi",
+                content: "Netflix and Chill"
+            },
+            {
+                type: "oumi",
+                content: "Je me sens libre quand je cours",
+            },
+            {
+                type: "oumi",
+>>>>>>> result page rewrite wit react bootstrap
                 content: "Le foot devant la télé et avec les copains",
             }
         ]
     },
     {
+<<<<<<< HEAD
         question: "T'es plutôt Gif ou \"J\"if ?",
         answers: [
             {
@@ -89,6 +114,36 @@ var quizQuestions = [
         ]
     },
 
+=======
+        question: "Tu prononce jif ou GIF ?",
+        answers: [
+            {
+                type: "oumi",
+                content: "Soulever de la fonte"
+            },
+            {
+                type: "oumi",
+                content: "Le sport de chambre"
+            },
+            {
+                type: "lena",
+                content: "Le marathon des bars"
+            },
+            {
+                type: "oumi",
+                content: "Netflix and Chill"
+            },
+            {
+                type: "oumi",
+                content: "Je me sens libre quand je cours",
+            },
+            {
+                type: "oumi",
+                content: "Le foot devant la télé et avec les copains",
+            }
+        ]
+    }
+>>>>>>> result page rewrite wit react bootstrap
 ];
 
 export default quizQuestions;
