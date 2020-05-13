@@ -19,7 +19,7 @@ var quizQuestions = [
                 content: "Netflix and Chill"
             },
             {
-                type: "khna, isma",
+                type: "khna,isma",
                 content: "Je me sens libre quand je cours",
             },
             {
@@ -32,11 +32,11 @@ var quizQuestions = [
         question: "T'es plutôt Gif ou \"J\"if ?",
         answers: [
             {
-                type: "theo, taha, khna",
+                type: "theo,taha,khna",
                 content: "Un G, quelle question !"
             },
             {
-                type: "oumi, lena",
+                type: "oumi,lena",
                 content: "Avec un J, comme Giraffe"
             },
         ]

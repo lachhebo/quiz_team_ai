@@ -201,7 +201,7 @@ function Result(props) {
           <Col xs={4} md={4}>
             <OverlayTrigger
               placement="right"
-              delay={{ show: 250, hide: 1200 }}
+              delay={{ show: 250, hide:  1000}}
               overlay={renderTooltipSoulMate(props.quizResult)}
             >
               <Image src={soulMate(props.quizResult)} roundedCircle />
@@ -213,31 +213,30 @@ function Result(props) {
       </Container>
 
       <Container>
-        <p>Look at the others : </p>
 
         <Row className="rowSkoolIA">
-          <Col xs={1} md={4}>
+          <Col>
             <OverlayTrigger
               placement="right"
-              delay={{ show: 250, hide: 1200 }}
+              delay={{ show: 250, hide:  1000}}
               overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[0])}
             >
               <Image src={otherSoulMate(props.quizResult)[0]} thumbnail />
             </OverlayTrigger>
           </Col>
-          <Col xs={4} md={4}>
+          <Col>
           <OverlayTrigger
               placement="right"
-              delay={{ show: 250, hide: 1200 }}
+              delay={{ show: 250, hide: 1000 }}
               overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[1])}
             >
               <Image src={otherSoulMate(props.quizResult)[1]} thumbnail />
             </OverlayTrigger>
           </Col>
-          <Col xs={1} md={4}>
+          <Col>
           <OverlayTrigger
               placement="right"
-              delay={{ show: 250, hide: 1200 }}
+              delay={{ show: 250, hide: 1000 }}
               overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[2])}
             >
               <Image src={otherSoulMate(props.quizResult)[2]} thumbnail />
@@ -245,28 +244,28 @@ function Result(props) {
           </Col>
         </Row>
         <Row className="rowSkoolIA">
-          <Col xs={1} md={4}>
+          <Col>
           <OverlayTrigger
               placement="right"
-              delay={{ show: 250, hide: 1200 }}
+              delay={{ show: 250, hide: 1000 }}
               overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[3])}
             >
               <Image src={otherSoulMate(props.quizResult)[3]} thumbnail />
             </OverlayTrigger>
           </Col>
-          <Col xs={4} md={4}>
+          <Col>
           <OverlayTrigger
               placement="right"
-              delay={{ show: 250, hide: 1200 }}
+              delay={{ show: 250, hide: 1000 }}
               overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[4])}
             >
               <Image src={otherSoulMate(props.quizResult)[4]} thumbnail />
             </OverlayTrigger>
           </Col>
-          <Col xs={1} md={4}>
+          <Col>
           <OverlayTrigger
               placement="right"
-              delay={{ show: 250, hide: 1200 }}
+              delay={{ show: 250, hide: 1000 }}
               overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[5])}
             >
               <Image src={otherSoulMate(props.quizResult)[5]} thumbnail />
@@ -274,17 +273,17 @@ function Result(props) {
           </Col>
         </Row>
         <Row>
-          <Col xs={1} md={4}></Col>
-          <Col xs={4} md={4}>
+          <Col></Col>
+          <Col >
           <OverlayTrigger
               placement="right"
-              delay={{ show: 250, hide: 1200 }}
+              delay={{ show: 250, hide: 1000 }}
               overlay={renderTooltipSoulMate(otherSoulMateName(props.quizResult)[6])}
             >
               <Image src={otherSoulMate(props.quizResult)[6]} thumbnail />
             </OverlayTrigger>
           </Col>
-          <Col xs={1} md={4}></Col>
+          <Col></Col>
         </Row>
 
       </Container>
