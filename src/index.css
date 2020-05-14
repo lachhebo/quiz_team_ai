@@ -61,6 +61,13 @@ body {
   text-align: center;
 }
 
+.auma {
+  justify-content: center;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Quiz Component */
 /* Question Component */
 .question {
