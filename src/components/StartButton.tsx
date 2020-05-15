@@ -11,6 +11,7 @@ const StartButton = styled(Button)<ButtonProps>`
   font-size: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 40px;
   `
 
 export default StartButton

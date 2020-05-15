@@ -141,10 +141,6 @@ var quizQuestions = [
             {
                 type: "theo, oumi",
                 content: "Rap"
-            },
-            {
-                type: "oumi",
-                content: "Moi je suis plutôt Disney+"
             }
         ]
     },
